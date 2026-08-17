@@ -45,6 +45,7 @@ markdown_extensions:
   - attr_list
 
 nav:
+  - 首页: index.md
   - 课程大纲: 课程大纲.md
   - 教材:
       - 第 1 章 产品与基础入门: textbook/ch01-product-fundamentals.md
