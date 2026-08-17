@@ -86,6 +86,7 @@ docs_dir: docs
 nav:
   - 首页: index.md
   - 课程大纲: 课程大纲.md
+  - 网页版课件: html/index.html
   - 教材:
       - 第 1 章 产品与基础入门: textbook/ch01-product-fundamentals.md
       - 第 2 章 任务创建与结果管理: textbook/ch02-task-creation-and-results.md
