@@ -42,11 +42,9 @@ jobs:
       - name: Build site
         run: mkdocs build --strict
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages
           path: site
-          retention-days: 1
 
   deploy:
     needs: build
