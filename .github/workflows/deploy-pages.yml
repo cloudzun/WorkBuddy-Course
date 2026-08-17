@@ -32,12 +32,13 @@ jobs:
           pip install mkdocs-material mkdocs-exclude
       - name: Prepare docs (aggregate single-source markdown)
         run: |
-          mkdir -p docs/textbook docs/labs docs/assets
+          mkdir -p docs/textbook docs/labs docs/assets docs/html
           cp docs-index.md docs/index.md
           cp 课程大纲.md docs/
           cp textbook/*.md docs/textbook/
           cp labs/*.md docs/labs/
           cp assets/extra.css docs/assets/extra.css
+          cp ppt/html/*.html docs/html/
       - name: Build site
         run: mkdocs build --strict
       - name: Upload artifact

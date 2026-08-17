@@ -5,6 +5,7 @@
 ## 📚 内容导航
 
 - **[课程大纲](课程大纲.md)** — 课程概述 / 目标 / 受众 / 章→节→小节目录 / 教学安排 / 考核验收
+- **[网页版课件](html/index.html)** — 9 章 + 课程总览的浏览器放映版（←/→ 翻页，F 全屏）
 - **教材**（9 章 + 附录）：
   - [第 1 章 产品与基础入门](textbook/ch01-product-fundamentals.md)
   - [第 2 章 任务创建与结果管理](textbook/ch02-task-creation-and-results.md)
