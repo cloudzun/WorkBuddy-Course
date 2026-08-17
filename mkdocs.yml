@@ -1,25 +1,72 @@
-# MkDocs 配置 —— WorkBuddy 效率进阶实训课程（教材站）
+# WorkBuddy 效率进阶实训课程 - 文档站点配置
 site_name: WorkBuddy 效率进阶实训课程
-site_description: 全场景 AI 办公实操提效课程：教材、实验手册与课程大纲在线版
+site_description: 教材（9 章 + 附录）+ 实验手册（38 个实验）+ 授课课件，基于官方文档逐条核验，实操提效
 site_url: https://cloudzun.github.io/WorkBuddy-Course/
 repo_url: https://github.com/cloudzun/WorkBuddy-Course
-docs_dir: docs
+repo_name: cloudzun/WorkBuddy-Course
+edit_uri: ""
 
 theme:
   name: material
   language: zh
   palette:
-    primary: teal
-    accent: teal
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: 切换深色模式
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: 切换浅色模式
   features:
-    - navigation.tabs
+    - navigation.instant
+    - navigation.tracking
     - navigation.top
-    - navigation.footer
+    - navigation.expand
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.code.annotate
+    - toc.follow
   icon:
     repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+  - tables
+  - attr_list
+  - md_in_html
+
+extra_javascript:
+  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
+
+extra_css:
+  - assets/extra.css
+
+extra:
+  generator: false
+
+copyright: Copyright &copy; 2026 · CC BY-NC-ND 4.0 · WorkBuddy 效率进阶实训课程
 
 plugins:
   - search:
@@ -34,15 +81,7 @@ plugins:
         - "*.js"
         - "*.ps1"
 
-markdown_extensions:
-  - admonition
-  - toc:
-      permalink: true
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - attr_list
+docs_dir: docs
 
 nav:
   - 首页: index.md
@@ -57,18 +96,18 @@ nav:
       - 第 7 章 助理连接配置: textbook/ch07-assistant-channels.md
       - 第 8 章 自动化: textbook/ch08-automation.md
       - 第 9 章 典型办公场景综合实战与 OPC 一人公司: textbook/ch09-office-scenarios-and-opc.md
-      - 附录 A 官方文档对照: textbook/appendix-official-docs-reference.md
+      - 教材↔实验映射: textbook/COURSE-OUTLINE.md
       - 术语表: textbook/GLOSSARY.md
       - 编写规范: textbook/TEXTBOOK-STYLE-GUIDE.md
-      - 教材大纲（章↔实验映射）: textbook/COURSE-OUTLINE.md
+      - 附录 A 官方文档对照: textbook/appendix-official-docs-reference.md
   - 实验手册:
+      - 实验 1.1-1.4 产品与基础入门: labs/ch01-labs.md
+      - 实验 2.1-2.5 任务创建与结果管理: labs/ch02-labs.md
+      - 实验 3.1-3.3 灵感模块: labs/ch03-labs.md
+      - 实验 4.1-4.6 技能·专家·专家团: labs/ch04-labs.md
+      - 实验 5.1-5.4 连接器与资料库: labs/ch05-labs.md
+      - 实验 6.1-6.5 模型配置: labs/ch06-labs.md
+      - 实验 7.1-7.6 助理连接配置: labs/ch07-labs.md
+      - 实验 8.1-8.4 自动化: labs/ch08-labs.md
+      - 综合演练 咖啡品牌季度经营分析: labs/ch09-labs.md
       - 实验手册说明: labs/README.md
-      - 第 1 章实验: labs/ch01-labs.md
-      - 第 2 章实验: labs/ch02-labs.md
-      - 第 3 章实验: labs/ch03-labs.md
-      - 第 4 章实验: labs/ch04-labs.md
-      - 第 5 章实验: labs/ch05-labs.md
-      - 第 6 章实验: labs/ch06-labs.md
-      - 第 7 章实验: labs/ch07-labs.md
-      - 第 8 章实验: labs/ch08-labs.md
-      - 第 9 章综合演练: labs/ch09-labs.md
