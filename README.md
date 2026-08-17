@@ -68,6 +68,7 @@ node compile.js                    # 重新生成 output/*.pptx
 - 内容修订请严格遵循 [AGENT.md](./AGENT.md) 中的编写规范（官方口径、全角引号、链接引用、结构骨架、字号规范等）
 - 教材修订基准：`textbook/TEXTBOOK-STYLE-GUIDE.md`
 - 课件重生成：修改 `ppt/ch0N/slide-*.js` 后在该目录执行 `node compile.js`，修改章节前后需同步重编 `ppt/full-course`
+- **复刻到其他项目**：见 [COURSE-WEB-PIPELINE.md](./COURSE-WEB-PIPELINE.md)「双形态课件发布流水线」复刻指南（含通用脚本 `ppt/scripts/slides-to-html.js`）
 
 ## 贡献指南
 
