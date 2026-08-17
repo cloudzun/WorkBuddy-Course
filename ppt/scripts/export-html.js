@@ -181,8 +181,10 @@ function buildChapterHtml(ch, slides) {
       if (it.kind === "table") return renderTable(it);
       return "";
     }).join("\n");
+    // 首帧即显示第一页：默认给第 1 页加 active，不依赖 JS 初始执行
+    const active = idx === 0 ? " active" : "";
     const label = slide.title || `第 ${idx + 1} 页`;
-    return `<section class="slide" data-title="${esc(label)}" style="background-color:${hexToRgba(bg, 0)}">${items}</section>`;
+    return `<section class="slide${active}" data-title="${esc(label)}" style="background-color:${hexToRgba(bg, 0)}">${items}</section>`;
   }).join("\n");
 
   return `<!DOCTYPE html>
