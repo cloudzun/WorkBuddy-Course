@@ -4,6 +4,11 @@ node_modules/
 npm-debug.log*
 yarn-error.log*
 
+# ---- MkDocs 聚合产物与站点输出 ----
+site/
+docs/
+.mkdocs_cache/
+
 # ---- 临时/系统文件 ----
 *.log
 *.tmp

@@ -1,0 +1,73 @@
+# MkDocs 配置 —— WorkBuddy 效率进阶实训课程（教材站）
+site_name: WorkBuddy 效率进阶实训课程
+site_description: 全场景 AI 办公实操提效课程：教材、实验手册与课程大纲在线版
+site_url: https://cloudzun.github.io/WorkBuddy-Course/
+repo_url: https://github.com/cloudzun/WorkBuddy-Course
+docs_dir: docs
+
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: teal
+    accent: teal
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - exclude:
+      glob:
+        - ".git*"
+        - "ppt/**"
+        - "*.json"
+        - "*.js"
+        - "*.ps1"
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - attr_list
+
+nav:
+  - 课程大纲: 课程大纲.md
+  - 教材:
+      - 第 1 章 产品与基础入门: textbook/ch01-product-fundamentals.md
+      - 第 2 章 任务创建与结果管理: textbook/ch02-task-creation-and-results.md
+      - 第 3 章 灵感模块: textbook/ch03-inspiration.md
+      - 第 4 章 技能、专家与专家团: textbook/ch04-skills-experts-and-teams.md
+      - 第 5 章 连接器与资料库: textbook/ch05-connectors-and-library.md
+      - 第 6 章 模型配置: textbook/ch06-models.md
+      - 第 7 章 助理连接配置: textbook/ch07-assistant-channels.md
+      - 第 8 章 自动化: textbook/ch08-automation.md
+      - 第 9 章 典型办公场景综合实战与 OPC 一人公司: textbook/ch09-office-scenarios-and-opc.md
+      - 附录 A 官方文档对照: textbook/appendix-official-docs-reference.md
+      - 术语表: textbook/GLOSSARY.md
+      - 编写规范: textbook/TEXTBOOK-STYLE-GUIDE.md
+      - 教材大纲（章↔实验映射）: textbook/COURSE-OUTLINE.md
+  - 实验手册:
+      - 实验手册说明: labs/README.md
+      - 第 1 章实验: labs/ch01-labs.md
+      - 第 2 章实验: labs/ch02-labs.md
+      - 第 3 章实验: labs/ch03-labs.md
+      - 第 4 章实验: labs/ch04-labs.md
+      - 第 5 章实验: labs/ch05-labs.md
+      - 第 6 章实验: labs/ch06-labs.md
+      - 第 7 章实验: labs/ch07-labs.md
+      - 第 8 章实验: labs/ch08-labs.md
+      - 第 9 章综合演练: labs/ch09-labs.md
