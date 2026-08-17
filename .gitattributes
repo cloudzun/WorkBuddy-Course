@@ -1,0 +1,13 @@
+# 统一行尾与文件类型
+* text=auto
+
+# 文本文件统一 LF 换行
+*.md text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.ps1 text eol=lf
+*.txt text eol=lf
+*.pptx binary
+
+# 区分语言（GitHub 语言统计）
+*.js linguist-language=JavaScript
