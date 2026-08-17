@@ -30,6 +30,6 @@
 
 ## 许可
 
-本站点内容采用 **CC BY-NC-ND 4.0**（署名-非商业-禁止演绎）授权，详见 [LICENSE](./LICENSE.md)。
+本站点内容采用 **CC BY-NC-ND 4.0**（署名-非商业-禁止演绎）授权，详见 [LICENSE](https://github.com/cloudzun/WorkBuddy-Course/blob/main/LICENSE.md)。
 
 > 课程名称：WorkBuddy 效率进阶实训课程 ｜ 版本基准：以官方文档与当前产品版本为准 ｜ 2026-08
